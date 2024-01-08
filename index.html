@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Coursera</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+
+            <!--                         FOR MENU-BTN                           -->
+            <div class="menu-button">
+                <button id="openMenu"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+            </div>
+
+
+            <div class="nav-logo">
+                <div class="logo">coursera</div>
+            </div>
+
+            <div class="menu-container">
+                <p class="menu-text">Explore <i class="fas fa-caret-down"></i></p>
+                <ul class="options">
+                  <h3>Goals</h3>
+                  <li>Take a free course</li>
+                  <li>Earn a Degree</li>
+                  <li>Earn a Certificate</li>
+                  <li>Find your new career</li>
+                  <li>    </li>
+                  <h3>Subjects</h3>
+                  <li>Data Science</li>
+                  <li>Business</li>
+                  <li>Computer Science</li>
+                  <li>Information Technology</li>
+                  <li>Language Learning</li>
+                  <li>Health</li>
+                  <li>Personal Development</li>
+                  <li>Physical Science and Engineering</li>
+                  <li>Social Sciences</li>
+                  <li>Arts and Humanities</li>
+                  <li>Math and Logic</li>
+                </ul>
+            </div>
+
+
+            <div class="nav-search">
+                <input placeholder="  Search Course" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="degree-text">
+                <p>Online Degrees</p>
+                <div class="dropdown-icon">
+                    <i class="fa-solid fa-circle-chevron-down fa-shake"></i>
+                </div>
+            </div>
+
+            <div class="find-career">
+                <p>Find your New Career</p>
+            </div>
+
+            <div class="nav-lang">
+                <div class="globe">
+                    <i class="fa-solid fa-globe" style="color: #000000;"></i>
+                </div>
+                <div class="lang">
+                    <p>English <i class="fa-solid fa-circle-chevron-down fa-shake"></i></p>
+                </div>
+            </div>
+
+            <div class="bell-icon">
+                <i class="fa-solid fa-bell-concierge" style="color: #000000;"></i>
+            </div>
+
+            <div class="horizontal-line">
+                <p>|</p>
+            </div>
+
+            <div class="user-name">
+                <div class="user-pic">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <p class="name">Sharad Kadam </p>
+                <div class="drop-down1">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+
+            <div class="close-btn">
+                <button id="closeMenu" style="display: none;"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu" style="display: none;">
+
+        <div class="list">
+            <p><i class="fa-regular fa-user"></i>  Sharad Kadam</p>
+            <p>Your Account</p>
+            <p>Help Center</p>
+            <p>For Enterprise</p>
+            <p>For Universities</p>
+            <p>Explore goals and subjects</p>
+        </div>
+    </div>
+
+
+    <div class="main-content"> 
+    
+
+        <div class="filter-container">
+            <div class="filter-list">
+                <div class="sidebar">
+                    <div class="close-button" id="closeButton"><i class="fa-solid fa-xmark fa-beat"></i></div>
+
+                    <h2 class="filter-text">Filter by</h2>
+                    <h4 class="filter-text">Level</h4>
+                    <label class="checkbox-label">
+                        <input  type="checkbox" id="myCheckbox1" value="myCheckbox1">
+                        Begineer
+                    </label>
+
+                    <label class="checkbox-label">
+                        <input  type="checkbox" id="myCheckbox2" value="myCheckbox2">
+                          Intermediate
+                    </label>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox3"  value="myCheckbox3"> 
+                          Advanced
+                    </label>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox4"  value="myCheckbox4"> 
+                        Mixed
+                    </label>
+
+                    <h4 class="duration-text">Duration</h4>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox5"  value="myCheckbox5"> 
+                        Less Than 2 Hours
+                    </label>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox6"  value="myCheckbox6"> 
+                        1-4 Weeks
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox7"  value="myCheckbox7"> 
+                        1-3 Months
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox8"  value="myCheckbox8"> 
+                        3-6 Months
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox9"  value="myCheckbox9"> 
+                        6-12 Months
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="myCheckbox10"   value="myCheckbox10"> 
+                        1-4 Years
+                    </label>
+
+                </div>   
+            </div>
+        </div>
+
+
+        <div class="filter-button" id="filterButton">
+            <img src="filter-btn img.png">
+        </div>
+    
+        <div class="course-section">
+            <div class="box" data-category="myCheckbox1 myCheckbox8">
+                <div class="box-content">
+                    <div class="box-img"  style="background-image: url('img1.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="IBM-img.png">
+                        <p>IBM</p>
+                    </div>
+                    <div class="line2">
+                        <p>IBM Full Stack Software Developer</p>
+                    </div>
+                    <div class="line3">
+                        <p><b>Skills you'll gain: </b> Cloud Computing, Python Programming, Cloud Applications, IBM Cloud, Application Development, Computer Programming... </p>
+                    </div>
+                    <div class="line4">
+                        <p>⭐<b style="color: black;">4.6</b> (40.7k reviews)</p>
+                    </div>
+                    <div class="line5">
+                        <img src="credit-eligible.png"><p style="align-items: center;display: flex;padding-left: 1rem;font-size: 1.3rem;color: rgba(128, 128, 128, 0.844);">Credit Eligible</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1 myCheckbox8">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('img2.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="meta-img.png">
+                        <p>Meta</p>
+                    </div>
+                    <div class="line2">
+                        <p>Meta Front-End Developer</p>
+                    </div>
+                    <div class="line4" style="padding-top: 9rem;">
+                        <p>⭐<b style="color: black;">4.6</b> (14k reviews)</p>
+                    </div>
+                    <div class="line5">
+                        <img src="credit-eligible.png"><p style="align-items: center;display: flex;padding-left: 1rem;font-size: 1.3rem;color: rgba(128, 128, 128, 0.844);">Credit Eligible</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox4 myCheckbox7">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img3.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="johns-img.png">
+                        <p>Johns Hopkins University</p>
+                    </div>
+                    <div class="line2">
+                        <p>HTML, CSS, and Javascript for Web Developers</p>
+                    </div>
+                    <div class="line3">
+                        <p><b>Skills you'll gain: </b> Front-End Web Development, HTML and CSS, Javascript, Web Development </p>
+                    </div>
+                    <div class="line4" style="padding-top: 7rem;">
+                        <p>⭐<b style="color: black;">4.7</b> (15.8k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Mixed · Course · 1 - 3 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1 myCheckbox8">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img4.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="michigan-img.png">
+                        <p>University of Michigan</p>
+                    </div>
+                    <div class="line2">
+                        <p>Web Design for Everbody: Basics of Web Development & Coding</p>
+                    </div>
+                    <div class="line3">
+                        <p><b>Skills you'll gain: </b>Front-End Web Development, HTML and CSS, Javascript, Web Development  </p>
+                    </div>
+                    <div class="line4"style="padding-top: 4rem;">
+                        <p>⭐<b style="color: black;">4.6</b> (40.7k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1 myCheckbox6">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img5.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="meta-img.png">
+                        <p>Meta</p>
+                    </div>
+                    <div class="line2">
+                        <p>Introduction to Front-End Development</p>
+                    </div>
+                    <div class="line3" style="font-size: 1.5rem;">
+                        <p><b>Skills you'll gain: </b> HTML and CSS, React(web framework), Web Development,Front-End Development,Web...</p>
+                    </div>
+                    <div class="line4" style="padding-top: 4rem;">
+                        <p>⭐<b style="color: black;">4.8</b> (8.6k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Course · 1 - 4 Weeks</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1  myCheckbox7">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img6.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="IBM-img.png">
+                        <p>IBM</p>
+                    </div>
+                    <div class="line2">
+                        <p>Introduction to Web Development with HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="line3">
+                        <p><b>Skills you'll gain: </b> Web Development, Cloud Applications, Javascript</p>
+                    </div>
+                    <div class="line4" style="padding-top: 4.5rem;">
+                        <p>⭐<b style="color: black;">4.6</b> (1.6k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Course · 1 - 3 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox5 myCheckbox2  myCheckbox7">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img7.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="netwrok-img.png">
+                        <p>Coursera Project Network</p>
+                    </div>
+                    <div class="line2">
+                        <p>Build a Portfolio Website with HTML, CSS, and JavaScript</p>
+                    </div>
+                    <div class="line3">
+                        <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Web Design, Web Development</p>
+                    </div>
+                    <div class="line4" style="padding-top: 4.5rem;">
+                        <p>⭐<b style="color: black;">3.9</b> (15 reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Intermediate · Guided Project · Less Than 2 Hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1  myCheckbox8">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img8.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="meta-img.png">
+                        <p>Meta</p>
+                    </div>
+                    <div class="line2">
+                        <p>Meta Back-End Developer</p>
+                    </div>
+                    <div class="line3">
+                        <p><b>Skills you'll gain: </b> Python Programming, Database, HTML and CSS, SQL, Database Design,... </p>
+                    </div>
+                    <div class="line4" style="padding-top: 9rem;">
+                        <p>⭐<b style="color: black;">4.7</b> (5.8k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1  myCheckbox8">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img9.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="google-img.png">
+                        <p>Google</p>
+                    </div>
+                    <div class="line2">
+                        <p>Google UX Design</p>
+                    </div>
+                    <div class="line3" style="font-size: 1.6rem;">
+                        <p><b>Skills you'll gain: </b> User Experience, User Experience Design, USer Research, Audit, Collaboration, Human Comput...</p>
+                    </div>
+                    <div class="line4">
+                        <p>⭐<b style="color: black;">4.8</b> (72.5k reviews)</p>
+                    </div>
+                    <div class="line5">
+                        <img src="credit-eligible.png"><p style="align-items: center;display: flex;padding-left: 1rem;font-size: 1.3rem;color: rgba(128, 128, 128, 0.844);">Credit Eligible</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img10.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="california-img.png">
+                        <p style="font-size: 1.7rem;">University of California, Davis</p>
+                    </div>
+                    <div class="line2">
+                        <p style="font-size: 1.7rem;">Introduction to Web Development</p>
+                    </div>
+                    <div class="line3" style="font-size: 1.7rem;">
+                        <p><b>Skills you'll gain: </b> Computer Programming, Front-End Web Development, Html and CSS,... </p>
+                    </div>
+                    <div class="line4" style="padding-top: 7rem;">
+                        <p>⭐<b style="color: black;">4.7</b> (3.6k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Course · 1 - 3 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1  myCheckbox8">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img11.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="IBM-img.png">
+                        <p>IBM</p>
+                    </div>
+                    <div class="line2">
+                        <p>IBM Back-End Development</p>
+                    </div>
+                    <div class="line3" style="font-size: 1.7rem;">
+                        <p><b>Skills you'll gain: </b> Application Development, Software Engineering, Python Programming, Computer... </p>
+                    </div>
+                    <div class="line4" style="padding-top: 6rem;">
+                        <p>⭐<b style="color: black;">4.6</b> (36.3k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="myCheckbox1  myCheckbox8">
+                <div class="box-content" >
+                    <div class="box-img" style="background-image: url('img12.jpg');"></div>
+                    <div class="line1">
+                        <img  style="border: 0.1rem solid rgba(128, 128, 128, 0.381);border-radius: 0.5rem;height: 3.3rem;width: 4rem;"  src="IBM-img.png">
+                        <p>IBM</p>
+                    </div>
+                    <div class="line2">
+                        <p>IBM Front-End Developer</p>
+                    </div>
+                    <div class="line3" style="font-size: 1.7rem;">
+                        <p><b>Skills you'll gain: </b> Software Engineering, Cloud Applications, Application Development, computer...</p>
+                    </div>
+                    <div class="line4" style="padding-top: 4rem;">
+                        <p>⭐<b style="color: black;">4.5</b> (2.9k reviews)</p>
+                    </div>
+                    <div class="line6">
+                        <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="no-matching-cards" style="display: none;">
+                <p class="empty">No Matching Course Found</p>
+            </div>
+        
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="foot-panel">
+            <ul class="box1">
+                <p>Get to Know Us</p>
+                <a>About
+                <a>What We Offer</a>
+                <a>Leadership</a>
+                <a>Careers</a>
+                <a>Catalog</a>
+                <a>Coursera Plus</a>
+                <a>Professional Certificates</a>
+                <a>MasterTrack® Certificates</a>
+                <a>Degrees</a>
+                <a>For Enterprise</a>
+                <a>For Government</a>
+                <a>For Campus</a>
+                <a>Become a Partner</a>
+                <a>Coronavirus Response</a>
+                <a>Social Impact</a>
+            </ul>
+            <ul class="box2">
+               <p>Community</p>
+               <a>Learners</a>
+               <a>Partners</a>
+               <a>Beta Testers</a>
+               <a>Translators</a>
+               <a>Blog</a>
+               <a>Tech Blog</a>
+               <a>Teaching Center</a>
+               
+            </ul>
+            <ul class="box3">
+                <p>More</p>
+                <a>Press</a>
+                <a>Investors</a>
+                <a>Terms</a>
+                <a>Privacy</a>
+                <a>Help</a>
+                <a>Accessibility</a>
+                <a>Contact</a>
+                <a>Articles</a>
+                <a>Directory</a>
+                <a>Affiliates</a>
+                <a>Modern Slavery Statement</a>
+                <a>Do Not Sell/Share</a>
+            </ul>
+            <ul class="box4">
+                <p>Mobile App</p>
+                <a><img src="aapStore-img.png"></a>
+                <a><img src="googlePlay-img.png"></a>
+                <a class="certified-img"><img src="certified-img.png"></a>
+            </ul>
+        </div>
+        
+        <div class="last-horizontal-line"></div>
+
+        <div class="foot-last">
+            <p class="copyright-text">© 2023 Coursera Inc. All rights reserved.</p>
+            <div class="logo-last">
+                <a href="https://www.facebook.com/Coursera" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+                <a href="https://www.linkedin.com/company/coursera/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #000000;"></i></a>
+                <a href="https://twitter.com/coursera" target="_blank"><i class="fa-brands fa-square-twitter" style="color: #000000;"></i></a>
+                <a href="https://www.youtube.com/user/coursera" target="_blank"><i class="fa-brands fa-youtube" style="color: #000000;"></i></a>
+                <a href="https://www.instagram.com/coursera/" target="_blank"><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
